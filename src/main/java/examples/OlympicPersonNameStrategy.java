@@ -2,7 +2,7 @@ package examples;
 
 public class OlympicPersonNameStrategy extends PersonNameStrategy {
 
-    private boolean sureNameFirst;
+    private final boolean sureNameFirst;
 
     protected OlympicPersonNameStrategy(boolean capitalizeSurname, boolean sureNameFirst) {
         super(capitalizeSurname);
