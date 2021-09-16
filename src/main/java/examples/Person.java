@@ -3,6 +3,8 @@ package examples;
 import java.util.ArrayList;
 import java.util.List;
 
+
+
 public class Person {
 
 	private final String familyName;
@@ -18,7 +20,7 @@ public class Person {
 				  boolean olympicMode, boolean capitalizeSurname) {
 		this.familyName = familyName;
 		this.givenName = givenName;
-		this.nameStrategy = new PersonNameStrategy(nationality, capitalizeSurname, olympicMode);
+		this.nameStrategy = PersonNameStrategyFactory.create(nationality, capitalizeSurname, olympicMode);
 	}
 
 	@Override
